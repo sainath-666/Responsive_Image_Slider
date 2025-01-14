@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Image Slider</h1>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#about">About Page</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <div class="slide active" style="background-image: url('img/1.jpg');">
+        </div>
+        <div class="slide" style="background-image: url('img/4.jpg');">
+        </div>
+        <div class="slide" style="background-image: url('img/3.jpg');">
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </div>
+
+    <section id="about">
+        <h1>About This Webpage</h1>
+        <ul>
+            <li><strong>Interactive Image Slider:</strong> Features automatic transitions, manual controls, and touch gesture support for a user-friendly experience on all devices.</li>
+            <li><strong>Responsive Design:</strong> Built using modern HTML, CSS, and JavaScript to ensure the slider and entire webpage adjust smoothly across different screen sizes and devices.</li>
+            <li><strong>Accessibility:</strong> Designed with accessibility in mind to be usable by everyone, including those with disabilities.</li>
+            <li><strong>Modern Web Standards:</strong> Implements the latest web development standards and practices to ensure high performance and cross-browser compatibility.</li>
+            <li><strong>Portfolio Showcase:</strong> Demonstrates web design skills and can be used as a part of a professional portfolio to attract potential clients or employers.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <form action="submitForm.php" method="POST">
+            <fieldset>
+                <legend>Reach Me</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name" autocomplete="name">
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email" autocomplete="email">
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required placeholder="Type your message here"></textarea>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    >
+
+    <footer>
+        <p>Sainathreddy</p>
+        <a href="https://www.linkedin.com/in/sainath666">Visit my LinkedIn</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

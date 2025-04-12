@@ -21,10 +21,6 @@
 - **Dot Navigation** - Click indicators to jump to specific slides
 - **Modern Design** - Clean, contemporary UI with smooth animations
 
-## 🚀 Live Demo
-
-Experience the slider in action: [Responsive Image Slider Demo](https://sainath-666.github.io/Responsive_Image_Slider/)
-
 ## 🛠️ Built With
 
 - HTML5

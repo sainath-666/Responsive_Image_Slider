@@ -3,64 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive image slider with autoplay and swipe gestures">
     <title>Responsive Image Slider</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>Responsive Image Slider</h1>
         <nav id="navbar">
             <ul>
-                <li><a href="#about">About Page</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#slider"><i class="fas fa-images"></i> Slider</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="slider">
-        <div class="slide active" style="background-image: url('img/1.jpg');">
+    <div id="slider" class="slider">
+        <div class="slide active slide-1">
+            <div class="slide-content">
+                <h2>Beautiful Landscapes</h2>
+                <p>Explore stunning natural scenery</p>
+            </div>
         </div>
-        <div class="slide" style="background-image: url('img/4.jpg');">
+        <div class="slide slide-2">
+            <div class="slide-content">
+                <h2>Amazing Architecture</h2>
+                <p>Discover incredible structures</p>
+            </div>
         </div>
-        <div class="slide" style="background-image: url('img/3.jpg');">
+        <div class="slide slide-3">
+            <div class="slide-content">
+                <h2>Breathtaking Views</h2>
+                <p>Experience the world's beauty</p>
+            </div>
         </div>
-        <button class="prev">❮</button>
-        <button class="next">❯</button>
+        <button class="prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="next"><i class="fas fa-chevron-right"></i></button>
+        <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
     </div>
 
     <section id="about">
         <h1>About This Webpage</h1>
-        <ul>
-            <li><strong>Interactive Image Slider:</strong> Features automatic transitions, manual controls, and touch gesture support for a user-friendly experience on all devices.</li>
-            <li><strong>Responsive Design:</strong> Built using modern HTML, CSS, and JavaScript to ensure the slider and entire webpage adjust smoothly across different screen sizes and devices.</li>
-            <li><strong>Accessibility:</strong> Designed with accessibility in mind to be usable by everyone, including those with disabilities.</li>
-            <li><strong>Modern Web Standards:</strong> Implements the latest web development standards and practices to ensure high performance and cross-browser compatibility.</li>
-            <li><strong>Portfolio Showcase:</strong> Demonstrates web design skills and can be used as a part of a professional portfolio to attract potential clients or employers.</li>
-        </ul>
+        <div class="about-content">
+            <ul>
+                <li><strong>Interactive Image Slider:</strong> Features automatic transitions, manual controls, and touch gesture support for a user-friendly experience on all devices.</li>
+                <li><strong>Responsive Design:</strong> Built using modern HTML, CSS, and JavaScript to ensure the slider and entire webpage adjust smoothly across different screen sizes and devices.</li>
+                <li><strong>Accessibility:</strong> Designed with accessibility in mind to be usable by everyone, including those with disabilities.</li>
+                <li><strong>Modern Web Standards:</strong> Implements the latest web development standards and practices to ensure high performance and cross-browser compatibility.</li>
+                <li><strong>Portfolio Showcase:</strong> Demonstrates web design skills and can be used as a part of a professional portfolio to attract potential clients or employers.</li>
+            </ul>
+        </div>
     </section>
 
     <section id="contact">
         <h1>Contact</h1>
-        <form action="submitForm.php" method="POST">
+        <form action="#" method="POST" id="contact-form">
             <fieldset>
                 <legend>Reach Me</legend>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Enter your name" autocomplete="name">
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Enter your email" autocomplete="email">
-    
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required placeholder="Type your message here"></textarea>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name" autocomplete="name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email" autocomplete="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required placeholder="Type your message here"></textarea>
+                </div>
             </fieldset>
-            <button type="submit">Submit</button>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
         </form>
     </section>
-    >
 
     <footer>
-        <p>Sainathreddy</p>
-        <a href="https://www.linkedin.com/in/sainath666">Visit my LinkedIn</a>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sainath666" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/sainath-666" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+        <div align="center">
+            <p>Made with <span class="heart">❤️</span> by Your Sainathreddy</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
